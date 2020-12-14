@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { color } from 'react-native-reanimated';
 
 const styles = StyleSheet.create({
   container: {
@@ -22,9 +23,30 @@ const styles = StyleSheet.create({
   goalsChart: {
     flex: 1,
     width: '100%',
-    backgroundColor: '#ddd',
-    alignSelf: 'center',
+    alignItems: 'center',
     marginVertical: 48,
+    justifyContent: 'center',
+  },
+  goalsChartWithData: {
+    backgroundColor: 'transparent',
+  },
+  goalsChartWithoutData: {
+    backgroundColor: '#f0f0f0',
+    borderRadius: 8,
+    justifyContent: 'center',
+  },
+  goalsChartContainer: {
+    position: 'absolute',
+    alignItems: 'center',
+  },
+  goalsChartTitle: {
+    color: '#2b2b73',
+    fontWeight: 'bold',
+    fontSize: 72,
+  },
+  goalsChartSubTitle: {
+    color: '#2b2b73',
+    fontSize: 18,
   },
   goalsDetailsContainer: {
     backgroundColor: '#F5F6FB',
